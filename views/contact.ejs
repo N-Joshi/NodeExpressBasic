@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <%include partials/navigation.ejs%>
+    <h3>Leave Your Query,We Will get in touch with !!</h3>
+    <form action="/contact" method="POST">
+        <label for="name">Name: </label><br>
+        <input type="text" name=name placeholder="Name" value=""><br><br>
+        <lable for="contact">Contact: </lable><br>
+        <input type="number" name=contact placeholder="Phone Number" value=""><br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
